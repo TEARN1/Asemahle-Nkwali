@@ -458,6 +458,9 @@ section div .underA {
     color: rgb(37, 37, 37);
     overflow-x: hidden;
 }
+.H5switch:hover {
+    color: rgb(50, 235, 241);
+}
 #OnBtn {
     background-color: black;
     color: rgb(43, 43, 43);
@@ -466,7 +469,7 @@ section div .underA {
 
 #OnBtn:hover {
     background-color: rgb(15, 15, 15);
-    color: gray;
+    color: rgb(23, 224, 231);
 }
 
 #MenuMenu {
@@ -565,4 +568,8 @@ section div .underA {
     border-radius: 10px;
     transition: .7s;
 
+}
+
+@media (screen) {
+    
 }
