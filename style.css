@@ -1,575 +1,428 @@
-body {
-    max-width: 1241px;
-    margin: 0;
-    padding: 0;
-    color: black;
-    background-color: #4c51c6;
-    font-family: 'Courier New', Courier, monospace;
-    overflow-x: hidden;
-}
-
-#navbar {
-    width: 100%;
-    position: fixed;
-    background-color: rgb(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    z-index: 10;
-    top: 1px;
-
-}
-
-#navbar .name h5 a {
-    text-decoration: none;
-    color: white;
-}
-
-.Btnlist .activeWork {
-    color: orangered;
-    background-color: white;
-    border-radius: 12px;
-}
-
-.name h5 {
-    margin-left: 20px;
-}
-
-section div nav {
-    display: flex;
-}
-
-
-section div nav .space {
-    background-color: transparent;
-    border: none;
-    padding: 20px;
-    color: white;
-    border-radius: 12px;
-}
-
-section div nav .space:hover {
-    background-color: rgb(255, 253, 253, 0.2);
-}
-
-section .write {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-}
-
-div.write {
-    padding: 60px;
-    margin: 70px;
-    border: none;
-    border-radius: 10px;
-}
-
-.write h1 {
-    color: orangered;
-}
-
-.small {
-    font-size: 15px;
-    color: black;
-}
-
-.balltwo {
-    position: absolute;
-    background-image: linear-gradient(45deg, transparent, rgb(254, 131, 12, 0.5), rgb(254, 131, 12), rgb(254, 131, 12));
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    left: 440px;
-    top: 100px;
-    z-index: 1;
-    animation: ball 2s linear infinite;
-}
-
-@keyframes ball {
-    0% {
-        top: 50px;
-        background: white;
-    }
-
-    25% {
-        top: 0px;
-    }
-
-    50% {
-        top: 50px;
-    }
-
-    75% {
-        top: 0px;
-    }
-
-    100% {
-        top: 50px;
-    }
-}
-
-
-.two {
-    width: 1240px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-}
-
-.ball {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    z-index: -1;
-    background-image: linear-gradient(45deg, transparent, rgb(0, 0, 0));
-    border-radius: 50%;
-    right: 120px;
-    top: 100px;
-}
-
-.btwo {
-    position: absolute;
-}
-
-img.here {
-    position: absolute;
-    left: 700px;
-    width: 500px;
-    height: 500px;
-}
-
-.onepic {
-    border-radius: 15px;
-    box-shadow: 10px 0 15px black;
-}
-
-.onepic:hover {
-    box-shadow: 0 0 15px black;
-}
-
-.write {
-    box-shadow: 10px 0 15px black;
-}
-
-.write:hover {
-    box-shadow: 0 0 15px black;
-}
-
-/*About Me*/
-
-section .aboutme {
-    width: 1240px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-}
-
-section .aboutme h3 {
-    margin-left: -210px;
-}
-
-section .divunder {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: -140px -0px 80px 0;
-}
-
-section .divunder span {
-    width: 100px;
-    height: 20px;
-    background-color: rgb(10, 7, 7);
-    z-index: -1;
-}
-
-/*My Skills*/
-
-#mySkill .aboutme {
-    padding: 100px;
-    width: 1240px;
-    color: white;
-}
-
-/*My Work*/
-
-section #portfolio {
-    width: 1240px;
-    height: 1240px;
-    color: white;
-}
-
-#portfolio .aboutme {
-    width: 1240px;
-    color: white;
-}
-
-#portfolio div .divunder {
-    margin-top: -267px;
-    margin-right: -210px;
-}
-
-#portfolio .aboutme h3 {
-    margin: 150px;
-}
-
-#portfolio div .divunder span {
-    margin-top: 100;
-    margin-left: -200px;
-}
-
-.personal {
-    display: flex;
-    padding-left: 200px;
-}
-
-
-.personal .person {
-    display: flex;
-}
-
-
-.personal .person .personFirst {
-    width: 250px;
-    height: 200px;
-    background-color: rgb(255, 255, 255, 0.1);
-    border-radius: 3px;
-    padding: 10px;
-    color: white;
-    margin: 10px;
-    border: 1px solid rgb(211, 211, 211);
-}
-
-.personal .person .personFirst:hover {
-    background-color: rgb(255, 255, 255);
-    transition: .5s ease-out;
-    border-radius: 0 30px;
-    color: black;
-}
-
-
-.personal .person .personSecond {
-    width: 250px;
-    color: white;
-    height: 200px;
-    background-color: rgb(255, 255, 255, 0.1);
-    border-radius: 3px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid rgb(255, 255, 255);
-}
-
-.personal .person .personSecond:hover {
-    background-color: rgb(255, 255, 255);
-    transition: .5s ease-in-out;
-    border-radius: 0 30px;
-    color: black;
-}
-
-
-.proj {
-    display: flex;
-}
-
-img {
-    width: 100%;
-}
-
-.shape {
-    background-color: rgb(0, 0, 0, 0.2);
-    margin: 5px;
-
-    padding: 25px;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
-.shape span {
-    color: rgb(227, 243, 122);
-    font-size: 10px;
-    flex-wrap: nowrap;
-}
-
-.skill {
-    background-image: url(./d0e64fe37c3fb73ff64e0983d2d2a554.jpg);
-    border-radius: 0px 200 200px;
-    padding: 20px;
-    overflow: hidden;
-}
-
-.skill div {
-    display: flex;
-}
-
-.cardCover {
-    display: flex;
-}
-
-.card {
-    background-color: white;
-    width: 300px;
-    height: 250px;
-    overflow: hidden;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.card:hover {
-    background-color: rgb(10, 7, 7);
-    color: white;
-    transition: 1s;
-    z-index: 2;
-    
-}
-
-.card div {
-    text-align: center;
-}
-
-.btn {
-    width: 100px;
-    padding: 10px;
-    color: white;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: black;
-}
-
-.btn:hover {
-    background-color: white;
-    color: black;
-    transition: .5s;
-}
-
-.Btnlist {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 900px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 70px;
-}
-
-.work {
-    width: 200px;
-    height: 400px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
-    background-color: rgb(255, 255, 255, 0.2);
-    overflow: hidden;
-    flex-wrap: wrap;
-}
-
-.line {
-    justify-content: center;
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
-.workClose {
-    padding: 5px;
-    background-color: rgb(177, 15, 15);
-    color: white;
-    border: none;
-}
-
-.workClose:hover {
-    background-color: rgb(211, 85, 85);
-}
-
-.workOpen {
-    padding: 5px;
-    background-color: green;
-    color: white;
-    border: 1px solid white;
-}
-
-.workOpen:hover {
-    background-color: rgb(83, 215, 83);
-}
-
-#Ndirect {
-    background-color: white;
-    overflow: scroll;
-}
-
-
-
-.WhiteBack {
-    background-color: white;
-}
-
-section .portfolioA {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-}
-
-section .aboutmeA {
-    width: 1240px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-}
-
-section div .underA {
-    background-color: white;
-}
-
-.white div {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.downArrow {
-    display: none;
-    position: absolute;
-    right: 1px;
-    padding: 10px;
-    border: none;
-
-
-}
-
-#Switch {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .7s;
-    color: rgb(37, 37, 37);
-    overflow-x: hidden;
-}
-.H5switch:hover {
-    color: rgb(50, 235, 241);
-}
-#OnBtn {
-    background-color: black;
-    color: rgb(43, 43, 43);
-    padding: 10px;
-}
-
-#OnBtn:hover {
-    background-color: rgb(15, 15, 15);
-    color: rgb(23, 224, 231);
-}
-
-#MenuMenu {
-    padding: 60px;
-    background-color: rgb(0, 0, 0,0.2);
-    z-index: 3;
-    position: fixed;
-    top: 1px;
-    height: 100%;
-    color: white;
-    width: fit-content;
-    right: 1%;
-    font-size: 20px;
-    display: none;
-}
-
-#MenuMenu div {
-    padding: 40px;
-    transition: .7s;
-}
-
-#MenuMenu div:hover  {
- background-color: rgb(255, 255, 255,0.5);
- font-weight: 900;
- color: black;
- position: relative;
- right: 50px;
- width: 350px;
- transition: .7s;
- border: 1px solid black;
- cursor: pointer;
-}
-
-#MenuMenuX {
-    display: flex;
-    justify-content: right;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(0, 0, 0);
-    font-weight: 900;
-    font-size: 30px;
-    transition: .7s;
-}
-#MenuMenu #MenuMenuX:hover {
-    background-color: rgb(255, 255, 255,0.5);
-    border: 1px solid red;
-    color: red;
-}
-
-#Talktomesectionh4{
-    position: fixed;
-    bottom: 1px;
-    padding:20px;
-    margin: 0 10px;
-    transition: .7s;
-}
-#Talktomesectionh4:hover {
-    background-color: rgb(255, 255, 255,0.2);
-    border: 1px solid;
-    cursor: pointer;
-    transition: .7s;
-}
-#formSection {
-    position: fixed;
-    top: 10%;
-    left: 35%;
-    background-color: rgb(0, 0, 0, 0.3);
-    padding: 40px;
-    z-index: 3;
-    display: none;
-    transition: .7s;
-    text-align: center;
-    cursor: pointer;
-}
-
-#formSection form input, textarea {
-    margin: 10px;
-    padding: 10px;
-    transition: .7s;
-}
-
-#formSectionClose{
-    cursor: pointer;
-    color: white;
-    transition: .7s;
-}
-#formSectionClose:hover {
-    color: red;
-    transition: .7s;
-}
-
-#formSection form .submit {
-    padding: 20px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    transition: .7s;
-
-}
-
-@media (screen) {
-    
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asemahle Nkwali</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="Menu">
+  <br><br>
+  <!-- Menu -->
+
+  <div class="Navbtn">
+    <!-- Nav buttons -->
+    <section class="one">
+      <div id="navbar" class="navbar">
+        <div class="name">
+          <h5><a href="#Menu">A.Nkwali</a></h5>
+        </div>
+
+        <nav class="nav" onclick="menuBtn()">
+          <a href="#Menu">
+            <button id="menuBtn" class="menu space">M</button>
+          </a>
+        </nav>
+      </div>
+    </section>
+    <div id="MenuMenu">
+      <div class="" onclick="MenuMenuX()" id="MenuMenuX">X</div>
+      <div id="MenuMenuAbout">About Me</div>
+      <div id="MenuMenuContacts">Contacts</div>
+      <div id="MenuMenuProjects">My Projects</div>
+      <div id="MenuMenuTheme">Themes</div>
+    </div>
+
+    <!-- Additional Info -->
+
+    <!-- intro switchboard -->
+
+    <div id="Switch">
+      <div>
+        <h4 id="time"></h4>
+        <button class="OnBtn" id="OnBtn" onmouseover="OnBtn()" onclick="OnClickBtn()">Switch On</button>
+      </div>
+    </div>
+
+
+
+    <!-- Talk to me Section -->
+
+    <div onclick="Talktomesection()" id="Talktomesection">
+      <h4 id="Talktomesectionh4">Say something</h4>
+    </div>
+
+    <!-- form section -->
+
+    <div id="formSection">
+      <div id="formSectionClose" onclick="formSectionClose()">
+        <h2>x</h2>
+      </div>
+      <form action="emailto: asemahlenkwali@gmail.com">
+        <input type="text" name="" id="" placeholder="Name"> <br>
+        <input type="text" name="" id="" placeholder="Email"> <br>
+        <textarea name="" id="" cols="21" rows="10" placeholder="Your Message to me"></textarea> <br>
+        <input class="submit" type="submit" value="Send">
+      </form>
+    </div>
+
+    <!-- Additional Info -->
+
+
+    <!--- Landing page -->
+    <section class="two">
+      <div class="write">
+        <h3 id="Time"></h3>
+        <h4>Hello</h4>
+        <h1>
+          I'm a React Developer <br />
+          <span class="small">Johannesburg,South Africa <br />base Developer whose is<br />looking
+            forward to work<br />Asap</span>
+        </h1>
+        <div class="balltwo"></div>
+      </div>
+
+      <div class="first">
+        <div class="me">
+          <img class="here" src="./Untitled.png" alt="" />
+          <div class="ball btwo"></div>
+        </div>
+      </div>
+    </section>
+    <div></div>
+    <br />
+
+    <!-- About ME -->
+
+    <div class="personal">
+      <div class="person">
+        <div class="personFirst">
+          <div>
+            <h4>
+              First Name:<span class="secColor">Asemahle</span><br />
+              Age: <span class="secColor">29 Years</span><br />
+              Freelance: <span class="secColor">Available</span><br />
+              Phone: <span class="secColor">+27694578973</span><br />
+              Available: <span class="secColor">Asap</span><br />
+            </h4>
+          </div>
+        </div>
+
+        <div class="personSecond">
+          <div>
+            <h4>
+              Last Name: <span class="secColor">Nkwali</span><br />
+              Country: <span class="secColor">South Africa</span> <br />
+              Address: <span class="secColor">Midrand</span> <br />
+              Languages: <span class="secColor">English +6</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj">
+        <div class="projFirst">
+          <div class="shape">1+ <span>year of experience</span></div>
+          <div class="shape">12+ <span>happy clients</span></div>
+        </div>
+        <div class="projSecond">
+          <div class="shape">20+ <span>Completed projects</span></div>
+          <div class="shape">0 awards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------ About Me-->
+
+  <section id="aboutMe" style="color: white; margin: 60px 0; overflow: hidden"></section>
+  <a href="#aboutMe"></a>
+  <!------ My Skills-->
+
+  <section id="mySkill">
+    <div class="aboutme">
+      <h3>My Skills</h3>
+    </div>
+
+    <div class="divunder">
+      <span class="under"></span>
+    </div>
+    <div class="cardCover">
+      <div class="card one">
+        <div>
+          <h3>Html $ Css</h3>
+          <h5>
+            Its fun way of starting of starting web development and getting no
+            bugs or something that requires one to overthink. <br /><br />
+            <span>50%</span>
+          </h5>
+        </div>
+      </div>
+
+      <div class="card two">
+        <div>
+          <h3>Boostrap $ Sass</h3>
+          <h5>Another level of Css, great styling !!</h5>
+        </div>
+      </div>
+
+      <div class="card tree">
+        <div>
+          <h3>JavaScript</h3>
+          <h5>
+            Thats where is the problem started, getting to know the real meaning
+            of coding syntex, RegEpx and more ... But fun though, because the
+            learning never stops <br />
+            <br />
+            40%
+          </h5>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>React $ Redux</h3>
+          <h5>
+            Mixing Html and Javascript is something that i never thought, it was
+            all fun and games before UseState, Props and more came to place,
+            making everything fun. <br /><br />
+            <span>40%</span>
+          </h5>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>D3 && Jquery</h3>
+          <h5>
+            When I thought I've seen it all, I tried these two, but I was strong
+            on Jquery, which was making things easy when its comes to Javascript
+            <br /><br /><span>40%</span>
+          </h5>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>DBMS</h3>
+          <h5>
+            PostgreSQL && SQL <br /><br />
+            When I though things were getting harder and harder then i meet this
+            Databaselanguage. things become fun again like Html
+            <br /><br /><span>50%</span>
+          </h5>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3>Back ENd</h3>
+          <h5>
+            Node.js, Express.js, MangoDB && Mangoose <br /> <br>
+            I dont wanna talk about this one, it took the level way higher than
+            I thought. I need more Practice <br /><br /><span>20%</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------ My Work------>
+
+  <section id="portfolio">
+    <div>
+      <div class="aboutme">
+        <h3>My Work</h3>
+      </div>
+      <div class="divunder">
+        <span class="under"></span>
+      </div>
+    </div>
+
+    <div>
+      <div class="center">
+        <div class="Btnlist">
+          <button class="btn activeWork" onclick="All()">All</button>
+          <button class="btn" onclick="Website()">Website</button>
+          <button class="btn" onclick="Email()">Email</button>
+          <button class="btn" onclick="Pages()">Pages</button>
+          <button class="btn" onclick="login()">login</button>
+        </div>
+      </div>
+
+      <div class="line">
+        <div id="Pages" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./Ndirect.jpeg" alt="" />
+            </div>
+          </div>
+          <div>
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="Pages" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./Ndirect sheet.jpeg" alt="" />
+            </div>
+          </div>
+          <div>
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="Pages" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="/TamiQ.jpeg" alt="" />
+            </div>
+          </div>
+          <div>
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="Website" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./Taxi Info.jpeg" alt="" />
+            </div>
+          </div>
+          <div>
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="Email" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./Email.jpeg" alt="" />
+            </div>
+          </div>
+          <div>
+
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="login" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./1.jpg" alt="" />
+            </div>
+          </div>
+          <div>
+
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="login" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./2.jpg" alt="" />
+            </div>
+          </div>
+          <div>
+
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="login" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./3.jpg" alt="" />
+            </div>
+          </div>
+          <div>
+
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="Pages" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./Quiz.jpeg" alt="" />
+            </div>
+          </div>
+          <div>
+
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="Email" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./Job Email.jpeg" alt="" />
+            </div>
+          </div>
+          <div>
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+        <div id="Pages" class="filterDiv Website">
+          <div>
+            <div class="work">
+              <img src="./Code Camp Form.jpeg" alt="" />
+            </div>
+          </div>
+          <div>
+
+            <button onclick="openWin()" class="workOpen">Open</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!------ Top News-->
+
+  <!-- <section id="news">
+    <h3>Hot Topics</h3>
+    <div class="news">
+      <div class="Forest">
+        <h3>Discovery of a Hiddin Forest in Chine</h3>
+      </div>
+
+      <div class="continent">
+        <h3>Discovery of the lost continant</h3>
+      </div>
+
+      <div class="Dolla and Rand Saga">
+        <h3></h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio portfolioA" style="background-color: white">
+    <div>
+      <div class="aboutmeA">
+        <h3>My Life</h3>
+      </div>
+      <div class="divunder">
+        <span class="underA"></span>
+      </div>
+      <div class="White">
+        <div>
+          <div>
+            <div>
+              <h4>here</h4>
+            </div>
+          </div>
+          <div>
+            <h4>Here</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <script src="app.js"></script>
+</body>
