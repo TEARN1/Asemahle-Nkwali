@@ -1,4 +1,5 @@
 
+
 function switchBtn() {
     document.getElementById("Switch").style.display = "none"
 }
@@ -23,19 +24,36 @@ function Talktomesection() {
     document.getElementById("formSection").style.display = "block"
 }
 
+
+//-------------------------------------------------------------------------------
+// Switch phase
+
+// Switch button
 function OnBtn() {
     addEventListener("mouseover", () => {
-        document.getElementById("OnBtn").style.color = "Blue"
+        document.getElementById("OnBtn").style.color = "#25e3dc"
     })
 }
 
-function H5switch() {
-    addEventListener("mouseover", () => {
-        document.getElementById("H5switch").style
-    })
+function OnClickBtn() {
+    document.getElementById("Switch").style.display = "none"
 }
 
+//Switch phase time
 
-document.addEventListener("mouseover", ()=> {
-    OnBtn() && H5switch()
-})
+function updateTime() {
+  const timeContainer = document.getElementById("time");
+  const now = new Date();
+  const formattedTime = now.toLocaleTimeString();
+  timeContainer.textContent = formattedTime;
+  setInterval(updateTime, 1000);
+
+  
+}
+
+updateTime();
+
+
+
+
+//----------------- End Switch phase ------------------------------------------------------------------
