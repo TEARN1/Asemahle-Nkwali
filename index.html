@@ -1,5 +1,3 @@
-<html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +25,7 @@
       </div>
     </section>
     <div id="MenuMenu">
-      <div onclick="MenuMenuX()" id="MenuMenuX">X</div>
+      <div class="" onclick="MenuMenuX()" id="MenuMenuX">X</div>
       <div id="MenuMenuAbout">About Me</div>
       <div id="MenuMenuContacts">Contacts</div>
       <div id="MenuMenuProjects">My Projects</div>
@@ -39,9 +37,10 @@
     <!-- intro switchboard -->
 
     <div id="Switch">
-      <div >
-        <h5 class="H5switch" id="H5switch"  onmouseover="H5switch()">Hello !! Im still under construction !!</h5> <br>
-        <button class="OnBtn" id="OnBtn" onmouseover="OnBtn()">Switch On</button></div>
+      <div>
+        <h4 id="time"></h4>
+        <button class="OnBtn" id="OnBtn" onmouseover="OnBtn()" onclick="OnClickBtn()">Switch On</button>
+      </div>
     </div>
 
 
@@ -72,6 +71,7 @@
     <!--- Landing page -->
     <section class="two">
       <div class="write">
+        <h3 id="Time"></h3>
         <h4>Hello</h4>
         <h1>
           I'm a React Developer <br />
@@ -135,7 +135,7 @@
   <!------ About Me-->
 
   <section id="aboutMe" style="color: white; margin: 60px 0; overflow: hidden"></section>
-
+  <a href="#aboutMe"></a>
   <!------ My Skills-->
 
   <section id="mySkill">
